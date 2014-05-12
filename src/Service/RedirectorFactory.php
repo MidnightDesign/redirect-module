@@ -17,7 +17,7 @@ class RedirectorFactory implements FactoryInterface
      */
     public function createService(ServiceLocatorInterface $serviceLocator)
     {
-        $storage = $serviceLocator->get('Redirect\Storage');
+        $storage = $serviceLocator->get('Midnight\RedirectModule\Storage');
         if (!$storage instanceof StorageInterface) {
             throw new \RuntimeException(sprintf('Expected to get an instance of Redirect\Storager\StorageInterface from the service manager. Got %s.', get_class($storage)));
         }

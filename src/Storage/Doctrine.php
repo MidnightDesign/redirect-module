@@ -28,7 +28,7 @@ class Doctrine implements StorageInterface
     public function getTo($from)
     {
         /** @var $redirect Redirect */
-        $redirect = $this->objectManager->getRepository('Redirect\Redirect')->findOneBy(array('from' => $from));
+        $redirect = $this->objectManager->getRepository('Midnight\RedirectModule\Redirect')->findOneBy(array('from' => $from));
         if (!$redirect) {
             return null;
         }

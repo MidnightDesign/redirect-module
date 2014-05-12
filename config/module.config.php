@@ -17,7 +17,7 @@ return array(
             ),
             'orm_default' => array(
                 'drivers' => array(
-                    'Redirect' => __NAMESPACE__,
+                    'Midnight\RedirectModule' => __NAMESPACE__,
                 ),
             ),
         ),
